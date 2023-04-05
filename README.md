@@ -1,6 +1,9 @@
 # GitHub Event Monitor
 
 This project monitors events happening on GitHub using the GitHub API. It streams specific events from the API and provides metrics at any time via a REST API to the end user.
+
+![C4 System Context Diagram](docs/c4system_context_diagram.drawio.png)
+
 ## Requirements
 
     - Python 3.x
