@@ -36,7 +36,7 @@ Access the endpoints at http://localhost:5000.
 
 ## Endpoints
 
-### GET /events/total/<int:offset>
+### GET /events/total/int:offset
 
 Returns the total number of events grouped by the event type for the specified offset (in minutes).
 
@@ -44,7 +44,7 @@ Parameters:
 
     offset: (required) The number of minutes to look back to count the events.
 
-### GET /repositories/<owner>/<repo>/avg/pulls
+### GET /repositories/string:owner/string:repo/avg/pulls
 
 Calculates the average time between pull requests for the specified repository.
 
@@ -52,3 +52,11 @@ Parameters:
 
     owner: (required) The username or organization that owns the repository.
     repo: (required) The name of the repository.
+
+### GET /events/chart/int:offset
+
+Displays a MatPlotLib pie chart that shows the `/events/total/int:offset` results.
+
+Parameters:
+
+    offset: (required) The number of minutes to look back to count the events.
